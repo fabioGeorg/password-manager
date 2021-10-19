@@ -275,8 +275,7 @@
             // 
             // btnAjouter
             // 
-            this.btnAjouter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAjouter.Image = ((System.Drawing.Image)(resources.GetObject("btnAjouter.Image")));
+            this.btnAjouter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;            
             this.btnAjouter.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAjouter.Location = new System.Drawing.Point(12, 28);
             this.btnAjouter.Name = "btnAjouter";
@@ -289,8 +288,7 @@
             // 
             // btnModifier
             // 
-            this.btnModifier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModifier.Image = ((System.Drawing.Image)(resources.GetObject("btnModifier.Image")));
+            this.btnModifier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;            
             this.btnModifier.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.btnModifier.Location = new System.Drawing.Point(154, 28);
             this.btnModifier.Name = "btnModifier";
@@ -303,8 +301,7 @@
             // 
             // btnSupprimer
             // 
-            this.btnSupprimer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSupprimer.Image = ((System.Drawing.Image)(resources.GetObject("btnSupprimer.Image")));
+            this.btnSupprimer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;            
             this.btnSupprimer.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.btnSupprimer.Location = new System.Drawing.Point(295, 28);
             this.btnSupprimer.Name = "btnSupprimer";
