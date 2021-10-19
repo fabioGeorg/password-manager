@@ -49,10 +49,8 @@ namespace PasswordManager
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-            if(!m_readOnly)
-            {
-                m_Infos = new GestionsInfos(txtSite.Text, txtMail.Text, txtUtilisateur.Text, txtMDP.Text);
-            }
+            if(!m_readOnly)            
+                m_Infos = new GestionsInfos(txtSite.Text, txtMail.Text, txtUtilisateur.Text, txtMDP.Text);            
         }
        public GestionsInfos GestionInfo
         {
@@ -104,14 +102,10 @@ namespace PasswordManager
 
         private void OnChange()
         {
-            if(txtSite.Text != "" && txtMail.Text != "" && txtUtilisateur.Text != "" && txtMDP.Text != "")
-            {
-                btnOK.Enabled = true;
-            }
-            else
-            {
-                btnOK.Enabled = false;
-            }
+            if(txtSite.Text != "" && txtMail.Text != "" && txtUtilisateur.Text != "" && txtMDP.Text != "")           
+                btnOK.Enabled = true;            
+            else            
+                btnOK.Enabled = false;            
         }
     }
 }
