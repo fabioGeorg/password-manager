@@ -17,6 +17,7 @@ namespace PasswordManager
 
         private void btnOK_Click(object sender, EventArgs e)
         {
+            //Not the safest thing to do.
             Properties.Settings.Default.CleSecrete = txtCle.Text;
             Properties.Settings.Default.Save();
         }
