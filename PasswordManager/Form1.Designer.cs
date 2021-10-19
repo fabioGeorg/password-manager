@@ -42,6 +42,8 @@
             this.ajouterToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.modifierToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.supprimerToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.debugToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.themeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnApropos = new System.Windows.Forms.ToolStripButton();
             this.datas = new System.Windows.Forms.DataGridView();
             this.ColSite = new System.Windows.Forms.DataGridViewLinkColumn();
@@ -59,9 +61,7 @@
             this.btnSupprimer = new System.Windows.Forms.Button();
             this.txtRecherche = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.debugToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.themeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.copierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1.SuspendLayout();
@@ -147,23 +147,37 @@
             // ajouterToolStripMenuItem1
             // 
             this.ajouterToolStripMenuItem1.Name = "ajouterToolStripMenuItem1";
-            this.ajouterToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.ajouterToolStripMenuItem1.Size = new System.Drawing.Size(129, 22);
             this.ajouterToolStripMenuItem1.Text = "Ajouter";
             this.ajouterToolStripMenuItem1.Click += new System.EventHandler(this.ajouterToolStripMenuItem1_Click);
             // 
             // modifierToolStripMenuItem1
             // 
             this.modifierToolStripMenuItem1.Name = "modifierToolStripMenuItem1";
-            this.modifierToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.modifierToolStripMenuItem1.Size = new System.Drawing.Size(129, 22);
             this.modifierToolStripMenuItem1.Text = "Modifier";
             this.modifierToolStripMenuItem1.Click += new System.EventHandler(this.modifierToolStripMenuItem1_Click);
             // 
             // supprimerToolStripMenuItem1
             // 
             this.supprimerToolStripMenuItem1.Name = "supprimerToolStripMenuItem1";
-            this.supprimerToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.supprimerToolStripMenuItem1.Size = new System.Drawing.Size(129, 22);
             this.supprimerToolStripMenuItem1.Text = "Supprimer";
             this.supprimerToolStripMenuItem1.Click += new System.EventHandler(this.supprimerToolStripMenuItem1_Click);
+            // 
+            // debugToolStripMenuItem
+            // 
+            this.debugToolStripMenuItem.Name = "debugToolStripMenuItem";
+            this.debugToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.debugToolStripMenuItem.Text = "Debug";
+            this.debugToolStripMenuItem.Click += new System.EventHandler(this.debugToolStripMenuItem_Click);
+            // 
+            // themeToolStripMenuItem
+            // 
+            this.themeToolStripMenuItem.Name = "themeToolStripMenuItem";
+            this.themeToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.themeToolStripMenuItem.Text = "Thème";
+            this.themeToolStripMenuItem.Click += new System.EventHandler(this.themeToolStripMenuItem_Click);
             // 
             // btnApropos
             // 
@@ -275,7 +289,7 @@
             // 
             // btnAjouter
             // 
-            this.btnAjouter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;            
+            this.btnAjouter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAjouter.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAjouter.Location = new System.Drawing.Point(12, 28);
             this.btnAjouter.Name = "btnAjouter";
@@ -288,7 +302,7 @@
             // 
             // btnModifier
             // 
-            this.btnModifier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;            
+            this.btnModifier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModifier.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.btnModifier.Location = new System.Drawing.Point(154, 28);
             this.btnModifier.Name = "btnModifier";
@@ -301,7 +315,7 @@
             // 
             // btnSupprimer
             // 
-            this.btnSupprimer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;            
+            this.btnSupprimer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSupprimer.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.btnSupprimer.Location = new System.Drawing.Point(295, 28);
             this.btnSupprimer.Name = "btnSupprimer";
@@ -329,23 +343,9 @@
             this.label1.TabIndex = 14;
             this.label1.Text = "Rechercher:";
             // 
-            // debugToolStripMenuItem
-            // 
-            this.debugToolStripMenuItem.Name = "debugToolStripMenuItem";
-            this.debugToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.debugToolStripMenuItem.Text = "Debug";
-            this.debugToolStripMenuItem.Click += new System.EventHandler(this.debugToolStripMenuItem_Click);
-            // 
             // colorDialog1
             // 
             this.colorDialog1.AnyColor = true;
-            // 
-            // themeToolStripMenuItem
-            // 
-            this.themeToolStripMenuItem.Name = "themeToolStripMenuItem";
-            this.themeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.themeToolStripMenuItem.Text = "Thème";
-            this.themeToolStripMenuItem.Click += new System.EventHandler(this.themeToolStripMenuItem_Click);
             // 
             // contextMenuStrip1
             // 

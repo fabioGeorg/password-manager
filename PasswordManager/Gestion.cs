@@ -6,12 +6,13 @@ namespace PasswordManager
     public partial class Gestion : Form
     {
         private bool m_readOnly;
-        private GestionsInfos m_Infos;
+        public GestionsInfos GestionInfo { get; set; }
+
         public Gestion(bool readOnly)
         {
             InitializeComponent();
 
-            if(readOnly)
+            if (readOnly)
             {
                 txtSite.ReadOnly = true;
                 txtMail.ReadOnly = true;
@@ -31,12 +32,12 @@ namespace PasswordManager
         private void Gestion_Load(object sender, EventArgs e)
         {
             btnOK.Enabled = false;
-            if(m_Infos != null)
+            if (GestionInfo != null)
             {
-                txtSite.Text = m_Infos.URL;
-                txtMail.Text = m_Infos.Mail;
-                txtUtilisateur.Text = m_Infos.Utilisateur;
-                txtMDP.Text = m_Infos.MDP;
+                txtSite.Text = GestionInfo.URL;
+                txtMail.Text = GestionInfo.Mail;
+                txtUtilisateur.Text = GestionInfo.Utilisateur;
+                txtMDP.Text = GestionInfo.MDP;
             }
             else
             {
@@ -49,19 +50,8 @@ namespace PasswordManager
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-            if(!m_readOnly)            
-                m_Infos = new GestionsInfos(txtSite.Text, txtMail.Text, txtUtilisateur.Text, txtMDP.Text);            
-        }
-       public GestionsInfos GestionInfo
-        {
-            get
-            {
-                return m_Infos;
-            }
-            set
-            {
-                m_Infos = value;
-            }
+            if (!m_readOnly)
+                GestionInfo = new GestionsInfos(txtSite.Text, txtMail.Text, txtUtilisateur.Text, txtMDP.Text);
         }
 
         private void txtSite_TextChanged(object sender, EventArgs e)
@@ -102,10 +92,10 @@ namespace PasswordManager
 
         private void OnChange()
         {
-            if(txtSite.Text != "" && txtMail.Text != "" && txtUtilisateur.Text != "" && txtMDP.Text != "")           
-                btnOK.Enabled = true;            
-            else            
-                btnOK.Enabled = false;            
+            if (txtSite.Text != "" && txtMail.Text != "" && txtUtilisateur.Text != "" && txtMDP.Text != "")
+                btnOK.Enabled = true;
+            else
+                btnOK.Enabled = false;
         }
     }
 }
